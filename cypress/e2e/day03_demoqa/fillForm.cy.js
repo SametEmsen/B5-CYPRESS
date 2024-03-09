@@ -34,6 +34,11 @@ context('Context: Fill form from demoqa', () => {
             cy.wrap(checkboxes).eq(2).parent().should("contain","Music");
             cy.wrap(checkboxes).eq(2).click();
         })
+        cy.get('.subjects-auto-complete__value-container').type("Sdet and Qa application");
+        cy.get('#currentAddress').type("Kraft sk. B5/5 Merkez/Kocaeli");
+        cy.get('#state').click();
+        
+        
 
     });
 });
